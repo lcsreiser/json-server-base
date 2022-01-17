@@ -6,6 +6,53 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "lucas@gmail.com",
+      "password": "$2a$10$IGfYJmzo/jTAtFnGciozGONMukhNi.fvSjZXkusw1gIRHi53nCtMe",
+      "name": "Lucas",
+      "age": 24,
+      "id": 2
+    }
+  ],
+  "foods": [
+    {
+      "type": "Arroz",
+      "name": "Arroz",
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "type": "Veg",
+      "name": "Arroz",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "type": "Non-Veg",
+      "name": "Alcatra",
+      "userId": 2,
+      "id": 3
+    }
+  ],
+  "drinks": [
+    {
+      "type": "Alc",
+      "name": "Caipirinha",
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "type": "Alc",
+      "name": "Cerveja",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "type": "Non-Alc",
+      "name": "Suco de laranja",
+      "userId": 2,
+      "id": 3
     }
   ]
 }

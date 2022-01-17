@@ -1,24 +1,47 @@
 # json-server-base
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita pelo aluno Lucas Reiser.
 
 ## Endpoints
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+Para mais informações (https://www.npmjs.com/package/json-server-auth).
 
 ### Cadastro
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
+POST /register
 
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
+O endpoint irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
 
+### Usuários
+
+GET /users/userId
+
+O endpoint irá mostrar todos os dados do usuário.
 
 ### Login
 
-POST /login <br/>
-POST /signin
+POST /login
 
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+O endpoint é usado para realizar login com um dos usuários cadastrados na lista de "Users".
+
+### Food
+
+POST /foods
+
+O endpoint é usado para realizar cadastrar novos pratos, sendo separados por vegetarianos ou
+não vegetarianos. É necessário ter o token de autorização para fazer o cadastro.
+
+GET /foods
+
+O endpoint mostra os pratos cadastrados.
+
+### Drink
+
+POST /drinks
+
+O endpoint é usado para realizar cadastrar novas bebidas, sendo separados por alcoolicos ou
+não alcoolicos. É necessário ter o token de autorização para fazer o cadastro.
+
+GET /drinks
+
+O endpoint mostra as bebidas cadastrados.
